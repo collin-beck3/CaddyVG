@@ -47,8 +47,8 @@ Weather API
 Elevation API
 Course Data API
 
-Controller = receives API requests
-Service = contains business logic
-Repository = talks to the database
-Model = database objects
-DTO = request/response objects
+- Controller = receives API requests
+- Service = contains business logic
+- Repository = talks to the database
+- Model = database objects
+- DTO = request/response objects
