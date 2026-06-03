@@ -1,5 +1,11 @@
-package main.java.com.caddyvg.repository;
+package com.caddyvg.repository;
 
-public class HoleRepository {
-    
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.caddyvg.model.Hole;
+
+public interface HoleRepository extends JpaRepository<Hole, Long> {
+    List<Hole> findByCourseCourseId(Long courseId);
 }

@@ -1,5 +1,8 @@
-package main.java.com.caddyvg.repository;
+package com.caddyvg.repository;
 
-public class CourseRepository {
-    
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.caddyvg.model.Course;
+
+public interface CourseRepository extends JpaRepository<Course, Long> {
 }
