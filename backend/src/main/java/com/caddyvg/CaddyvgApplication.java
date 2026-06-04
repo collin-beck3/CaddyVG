@@ -1,5 +1,12 @@
-package main.java.com.caddyvg;
+package com.caddyvg;
 
-public enum CaddyvgApplication {
-    
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class CaddyvgApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(CaddyvgApplication.class, args);
+    }
 }

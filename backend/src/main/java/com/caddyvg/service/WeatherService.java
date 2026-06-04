@@ -1,4 +1,4 @@
-package main.java.com.caddyvg.service;
+package com.caddyvg.service;
 
 public class WeatherService {
     

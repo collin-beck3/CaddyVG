@@ -1,4 +1,4 @@
-package main.java.com.caddyvg.model;
+package com.caddyvg.model;
 
 public class Round {
     

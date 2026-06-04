@@ -1,4 +1,4 @@
-package main.java.com.caddyvg.dto;
+package com.caddyvg.dto;
 
 public class WeatherData {
     
