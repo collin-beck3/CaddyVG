@@ -28,4 +28,24 @@ public class Hazard {
     }
 
     // getters and setters
+
+    public Long getHazardId() {
+    return hazardId;
+}
+
+public String getType() {
+    return type;
+}
+
+public String getLabel() {
+    return label;
+}
+
+public Double getLatitude() {
+    return latitude;
+}
+
+public Double getLongitude() {
+    return longitude;
+}
 }

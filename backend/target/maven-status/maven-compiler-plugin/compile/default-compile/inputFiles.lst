@@ -1,5 +1,6 @@
 /Users/colin/Projects/CaddyVG/backend/src/main/java/com/caddyvg/CaddyvgApplication.java
 /Users/colin/Projects/CaddyVG/backend/src/main/java/com/caddyvg/controller/CourseController.java
+/Users/colin/Projects/CaddyVG/backend/src/main/java/com/caddyvg/controller/HoleController.java
 /Users/colin/Projects/CaddyVG/backend/src/main/java/com/caddyvg/controller/RoundController.java
 /Users/colin/Projects/CaddyVG/backend/src/main/java/com/caddyvg/controller/ScorecardController.java
 /Users/colin/Projects/CaddyVG/backend/src/main/java/com/caddyvg/controller/YardageController.java
