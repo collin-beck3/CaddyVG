@@ -1,9 +1,13 @@
 /Users/colin/Projects/CaddyVG/backend/src/main/java/com/caddyvg/CaddyvgApplication.java
 /Users/colin/Projects/CaddyVG/backend/src/main/java/com/caddyvg/controller/CourseController.java
+/Users/colin/Projects/CaddyVG/backend/src/main/java/com/caddyvg/controller/CourseImportController.java
+/Users/colin/Projects/CaddyVG/backend/src/main/java/com/caddyvg/controller/CourseSearchController.java
 /Users/colin/Projects/CaddyVG/backend/src/main/java/com/caddyvg/controller/HoleController.java
 /Users/colin/Projects/CaddyVG/backend/src/main/java/com/caddyvg/controller/RoundController.java
 /Users/colin/Projects/CaddyVG/backend/src/main/java/com/caddyvg/controller/ScorecardController.java
 /Users/colin/Projects/CaddyVG/backend/src/main/java/com/caddyvg/controller/YardageController.java
+/Users/colin/Projects/CaddyVG/backend/src/main/java/com/caddyvg/dto/CourseImportRequest.java
+/Users/colin/Projects/CaddyVG/backend/src/main/java/com/caddyvg/dto/CourseSearchResult.java
 /Users/colin/Projects/CaddyVG/backend/src/main/java/com/caddyvg/dto/ElevationDate.java
 /Users/colin/Projects/CaddyVG/backend/src/main/java/com/caddyvg/dto/WeatherData.java
 /Users/colin/Projects/CaddyVG/backend/src/main/java/com/caddyvg/dto/YardageRequest.java
@@ -20,8 +24,10 @@
 /Users/colin/Projects/CaddyVG/backend/src/main/java/com/caddyvg/repository/RoundRepository.java
 /Users/colin/Projects/CaddyVG/backend/src/main/java/com/caddyvg/repository/ScorecardEntryRepository.java
 /Users/colin/Projects/CaddyVG/backend/src/main/java/com/caddyvg/repository/UserRepository.java
+/Users/colin/Projects/CaddyVG/backend/src/main/java/com/caddyvg/service/CourseImportService.java
 /Users/colin/Projects/CaddyVG/backend/src/main/java/com/caddyvg/service/CourseService.java
 /Users/colin/Projects/CaddyVG/backend/src/main/java/com/caddyvg/service/ElevationService.java
+/Users/colin/Projects/CaddyVG/backend/src/main/java/com/caddyvg/service/OpenStreetMapService.java
 /Users/colin/Projects/CaddyVG/backend/src/main/java/com/caddyvg/service/RoundService.java
 /Users/colin/Projects/CaddyVG/backend/src/main/java/com/caddyvg/service/ScorecardService.java
 /Users/colin/Projects/CaddyVG/backend/src/main/java/com/caddyvg/service/WeatherService.java

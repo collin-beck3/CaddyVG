@@ -1,5 +1,7 @@
 package com.caddyvg.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -20,6 +22,7 @@ public class Hazard {
     private Double latitude;
     private Double longitude;
 
+    @JsonIgnore
     @ManyToOne
     @JoinColumn(name = "hole_id")
     private Hole hole;
@@ -27,25 +30,51 @@ public class Hazard {
     public Hazard() {
     }
 
-    // getters and setters
-
     public Long getHazardId() {
-    return hazardId;
-}
+        return hazardId;
+    }
 
-public String getType() {
-    return type;
-}
+    public void setHazardId(Long hazardId) {
+        this.hazardId = hazardId;
+    }
 
-public String getLabel() {
-    return label;
-}
+    public String getType() {
+        return type;
+    }
 
-public Double getLatitude() {
-    return latitude;
-}
+    public void setType(String type) {
+        this.type = type;
+    }
 
-public Double getLongitude() {
-    return longitude;
-}
+    public String getLabel() {
+        return label;
+    }
+
+    public void setLabel(String label) {
+        this.label = label;
+    }
+
+    public Double getLatitude() {
+        return latitude;
+    }
+
+    public void setLatitude(Double latitude) {
+        this.latitude = latitude;
+    }
+
+    public Double getLongitude() {
+        return longitude;
+    }
+
+    public void setLongitude(Double longitude) {
+        this.longitude = longitude;
+    }
+
+    public Hole getHole() {
+        return hole;
+    }
+
+    public void setHole(Hole hole) {
+        this.hole = hole;
+    }
 }

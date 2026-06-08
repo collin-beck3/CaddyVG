@@ -16,6 +16,7 @@ public class Course {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long courseId;
+    private String externalCourseId;
 
     private String name;
     private String city;
@@ -87,4 +88,13 @@ public void setLatitude(Double latitude) {
 public void setLongitude(Double longitude) {
     this.longitude = longitude;
 }
+
+public String getExternalCourseId() {
+    return externalCourseId;
+}
+
+public void setExternalCourseId(String externalCourseId) {
+    this.externalCourseId = externalCourseId;
+}
+
 }

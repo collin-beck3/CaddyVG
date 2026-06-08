@@ -3,6 +3,8 @@ package com.caddyvg.model;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -35,64 +37,127 @@ public class Hole {
     private Double backGreenLatitude;
     private Double backGreenLongitude;
 
+    @JsonIgnore
     @ManyToOne
     @JoinColumn(name = "course_id")
     private Course course;
 
+    @JsonIgnore
     @OneToMany(mappedBy = "hole", cascade = CascadeType.ALL)
     private List<Hazard> hazards = new ArrayList<>();
 
     public Hole() {
     }
 
-    // getters and setters
-    
-    public double getFrontGreenLatitude() {
+    public Long getHoleId() {
+        return holeId;
+    }
+
+    public void setHoleId(Long holeId) {
+        this.holeId = holeId;
+    }
+
+    public int getHoleNumber() {
+        return holeNumber;
+    }
+
+    public void setHoleNumber(int holeNumber) {
+        this.holeNumber = holeNumber;
+    }
+
+    public int getPar() {
+        return par;
+    }
+
+    public void setPar(int par) {
+        this.par = par;
+    }
+
+    public int getHandicap() {
+        return handicap;
+    }
+
+    public void setHandicap(int handicap) {
+        this.handicap = handicap;
+    }
+
+    public Double getTeeLatitude() {
+        return teeLatitude;
+    }
+
+    public void setTeeLatitude(Double teeLatitude) {
+        this.teeLatitude = teeLatitude;
+    }
+
+    public Double getTeeLongitude() {
+        return teeLongitude;
+    }
+
+    public void setTeeLongitude(Double teeLongitude) {
+        this.teeLongitude = teeLongitude;
+    }
+
+    public Double getFrontGreenLatitude() {
         return frontGreenLatitude;
     }
-    
-    public double getFrontGreenLongitude() {
+
+    public void setFrontGreenLatitude(Double frontGreenLatitude) {
+        this.frontGreenLatitude = frontGreenLatitude;
+    }
+
+    public Double getFrontGreenLongitude() {
         return frontGreenLongitude;
     }
-    
-    public double getMiddleGreenLatitude() {
+
+    public void setFrontGreenLongitude(Double frontGreenLongitude) {
+        this.frontGreenLongitude = frontGreenLongitude;
+    }
+
+    public Double getMiddleGreenLatitude() {
         return middleGreenLatitude;
     }
-    
-    public double getMiddleGreenLongitude() {
+
+    public void setMiddleGreenLatitude(Double middleGreenLatitude) {
+        this.middleGreenLatitude = middleGreenLatitude;
+    }
+
+    public Double getMiddleGreenLongitude() {
         return middleGreenLongitude;
     }
-    
-    public double getBackGreenLatitude() {
+
+    public void setMiddleGreenLongitude(Double middleGreenLongitude) {
+        this.middleGreenLongitude = middleGreenLongitude;
+    }
+
+    public Double getBackGreenLatitude() {
         return backGreenLatitude;
     }
-    
-    public double getBackGreenLongitude() {
+
+    public void setBackGreenLatitude(Double backGreenLatitude) {
+        this.backGreenLatitude = backGreenLatitude;
+    }
+
+    public Double getBackGreenLongitude() {
         return backGreenLongitude;
     }
 
-    public Long getHoleId() {
-    return holeId;
-}
+    public void setBackGreenLongitude(Double backGreenLongitude) {
+        this.backGreenLongitude = backGreenLongitude;
+    }
 
-public int getHoleNumber() {
-    return holeNumber;
-}
+    public Course getCourse() {
+        return course;
+    }
 
-public int getPar() {
-    return par;
-}
+    public void setCourse(Course course) {
+        this.course = course;
+    }
 
-public int getHandicap() {
-    return handicap;
-}
+    public List<Hazard> getHazards() {
+        return hazards;
+    }
 
-public Double getTeeLatitude() {
-    return teeLatitude;
-}
-
-public Double getTeeLongitude() {
-    return teeLongitude;
-}
-
+    public void setHazards(List<Hazard> hazards) {
+        this.hazards = hazards;
+    }
 }
