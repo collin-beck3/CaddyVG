@@ -129,8 +129,8 @@ public class CourseImportService {
                 );
             }
 
-            Double teeLatitude = teePoint != null ? teePoint.latitude() : null;
-            Double teeLongitude = teePoint != null ? teePoint.longitude() : null;
+            Double teeLatitude = teePoint != null ? teePoint.latitude() : fallbackLatitude;
+            Double teeLongitude = teePoint != null ? teePoint.longitude() : fallbackLongitude;
 
             Double greenLatitude = greenPoint != null ? greenPoint.latitude() : fallbackLatitude;
             Double greenLongitude = greenPoint != null ? greenPoint.longitude() : fallbackLongitude;
